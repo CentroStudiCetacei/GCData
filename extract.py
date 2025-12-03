@@ -4,6 +4,9 @@ import geopandas as gpd
 import os
 from datetime import datetime
 
+import warnings
+warnings.filterwarnings("ignore", category=UserWarning)
+
 f = open("config.json", "r")
 config = json.load(f)
 
