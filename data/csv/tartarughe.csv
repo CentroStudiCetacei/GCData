@@ -1,7 +1,7 @@
 codice,data_rilievo,regione,provincia,comune,specie,cod_specie,sesso,lunghezza_cm,tipo_lunghezza,condizioni,tag,tag_rilascio,interazione,segnalato_da,rilevatore,struttura_rilevatore,lng,lat
+CSC251203TCc1,2025-12-03,Abruzzo,Pescara,Pescara,Caretta caretta,1,ND,36.5,CCL,Vivo,,CSCIT376,Si,Motopeschereccio,Anna Angrilli,Centro Studi Cetacei,14.29977,42.53362
 CSC251203TCc3,2025-12-03,Abruzzo,Pescara,Pescara,Caretta caretta,1,ND,61.5,CCL,Vivo,,CSCIT375,Si,Centro Studi Cetacei,Anna Angrilli,Centro Studi Cetacei,14.28261,42.50934
-CSC251203TCc1,2025-12-03,Abruzzo,Pescara,Pescara,Caretta caretta,1,ND,365.0,CCL,Vivo,,CSCIT376,Si,Motopeschereccio,Anna Angrilli,Centro Studi Cetacei,14.29977,42.53362
-CSC251203TCc2,2025-12-03,Abruzzo,Pescara,Pescara,Caretta caretta,1,ND,614.0,CCL,Vivo,CSCIT328,,Si,Motopeschereccio,Anna Angrilli,Centro Studi Cetacei,14.30389,42.53161
+CSC251203TCc2,2025-12-03,Abruzzo,Pescara,Pescara,Caretta caretta,1,ND,61.4,CCL,Vivo,CSCIT328,,Si,Motopeschereccio,Anna Angrilli,Centro Studi Cetacei,14.30389,42.53161
 CSC251202TCc1,2025-12-02,Abruzzo,Pescara,Pescara,Caretta caretta,1,M,80.8,CCL,Vivo,,CSCIT374,Si,Motopeschereccio,Anna Angrilli,Centro Studi Cetacei,14.35342,42.57322
 CSC251128TCc1,2025-11-28,Abruzzo,Pescara,Montesilvano,Caretta caretta,1,ND,54.0,CCL,Morto,,,ND,Guardia Costiera,Anna Angrilli,Centro Studi Cetacei,14.17246,42.50706
 CSC251123TCc1,2025-11-23,Emilia Romagna,Ravenna,Ravenna,Caretta caretta,1,ND,45.0,CCL,Morto,,,ND,Guardia Costiera,Non disponibile,Guardia Costiera,12.31717,44.39257
