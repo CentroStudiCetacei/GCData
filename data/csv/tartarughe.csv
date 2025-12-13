@@ -1,6 +1,6 @@
 codice,data_rilievo,regione,provincia,comune,specie,cod_specie,sesso,lunghezza_cm,tipo_lunghezza,condizioni,tag,tag_rilascio,interazione,segnalato_da,rilevatore,struttura_rilevatore,lng,lat
 CSC251207TCc1,2025-12-07,Abruzzo,Pescara,Città Sant'Angelo,Caretta caretta,1,F,68.0,CCL,Morto,,,ND,Guardia Costiera,Claudia Borgatti,Centro Studi Cetacei,14.14851,42.52815
-CSC251207TCc2,2025-12-07,Abruzzo,Chieti,Torino di Sangro,Caretta caretta,1,ND,,,Morto,,,ND,Guardia Costiera,Paola Priori,Centro Studi Cetacei,14.55502,42.22805
+CSC251207TCc2,2025-12-07,Abruzzo,Chieti,Torino di Sangro,Caretta caretta,1,ND,33.5,CCL,Morto,,,ND,Guardia Costiera,Paola Priori,Centro Studi Cetacei,14.55502,42.22805
 CSC251203TCc2,2025-12-03,Abruzzo,Pescara,Pescara,Caretta caretta,1,ND,61.4,CCL,Vivo,CSCIT328,,Si,Motopeschereccio,Anna Angrilli,Centro Studi Cetacei,14.30389,42.53161
 CSC251203TCc1,2025-12-03,Abruzzo,Pescara,Pescara,Caretta caretta,1,ND,36.5,CCL,Vivo,,CSCIT376,Si,Motopeschereccio,Anna Angrilli,Centro Studi Cetacei,14.29977,42.53362
 CSC251203TCc3,2025-12-03,Abruzzo,Pescara,Pescara,Caretta caretta,1,ND,61.5,CCL,Vivo,,CSCIT375,Si,Centro Studi Cetacei,Anna Angrilli,Centro Studi Cetacei,14.28261,42.50934
