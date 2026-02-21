@@ -32,17 +32,17 @@ CSC251212TCc1,2025-12-12,Puglia,Foggia,Vieste,Caretta caretta,1,F,67.0,CCL,Morto
 CSC251209TCc1,2025-12-09,Emilia Romagna,Ravenna,Ravenna,Caretta caretta,1,M,80.0,TOT,Morto,,,ND,Guardia Costiera,Non disponibile,Guardia Costiera,12.31704,44.39263
 CSC251207TCc1,2025-12-07,Abruzzo,Pescara,Città Sant'Angelo,Caretta caretta,1,F,68.0,CCL,Morto,,,ND,Guardia Costiera,Claudia Borgatti,Centro Studi Cetacei,14.14851,42.52815
 CSC251207TCc2,2025-12-07,Abruzzo,Chieti,Torino di Sangro,Caretta caretta,1,ND,33.5,CCL,Morto,,,ND,Guardia Costiera,Paola Priori,Centro Studi Cetacei,14.55502,42.22805
-CSC251203TCc3,2025-12-03,Abruzzo,Pescara,Pescara,Caretta caretta,1,ND,61.5,CCL,Vivo,,CSCIT375,Si,Motopeschereccio,Anna Angrilli,Centro Studi Cetacei,14.28261,42.50934
 CSC251203TCc1,2025-12-03,Abruzzo,Pescara,Pescara,Caretta caretta,1,ND,36.5,CCL,Vivo,,CSCIT376,Si,Motopeschereccio,Anna Angrilli,Centro Studi Cetacei,14.29977,42.53362
 CSC251203TCc2,2025-12-03,Abruzzo,Pescara,Pescara,Caretta caretta,1,ND,61.4,CCL,Vivo,CSCIT328,,Si,Motopeschereccio,Anna Angrilli,Centro Studi Cetacei,14.30389,42.53161
+CSC251203TCc3,2025-12-03,Abruzzo,Pescara,Pescara,Caretta caretta,1,ND,61.5,CCL,Vivo,,CSCIT375,Si,Motopeschereccio,Anna Angrilli,Centro Studi Cetacei,14.28261,42.50934
 CSC251202TCc1,2025-12-02,Abruzzo,Pescara,Pescara,Caretta caretta,1,M,80.8,CCL,Vivo,,CSCIT374,Si,Motopeschereccio,Anna Angrilli,Centro Studi Cetacei,14.35342,42.57322
 CSC251128TCc1,2025-11-28,Abruzzo,Pescara,Montesilvano,Caretta caretta,1,ND,54.0,CCL,Morto,,,ND,Guardia Costiera,Anna Angrilli,Centro Studi Cetacei,14.17246,42.50706
 CSC251123TCc2,2025-11-23,Emilia Romagna,Ravenna,Ravenna,Caretta caretta,1,ND,42.0,CCL,Morto,,,ND,Guardia Costiera,Non disponibile,Guardia Costiera,12.30617,44.42226
 CSC251123TCc1,2025-11-23,Emilia Romagna,Ravenna,Ravenna,Caretta caretta,1,ND,45.0,CCL,Morto,,,ND,Guardia Costiera,Non disponibile,Guardia Costiera,12.31717,44.39257
 CSC251122TCc1,2025-11-22,Abruzzo,Chieti,Francavilla al Mare,Caretta caretta,1,ND,65.0,CCL,Morto,,,ND,Guardia Costiera,Fausto Barbone,ASL,14.30497,42.41315
 CSC251122TCc2,2025-11-22,Abruzzo,Pescara,Pescara,Caretta caretta,1,ND,41.0,CCL,Morto,,,ND,Guardia Costiera,Anna Angrilli,Centro Studi Cetacei,14.2045,42.47869
-CSC251119TCc1,2025-11-19,Emilia Romagna,Ravenna,Ravenna,Caretta caretta,1,ND,55.0,CCL,Morto,,,ND,Guardia Costiera,Non disponibile,Guardia Costiera,12.30398,44.42852
 CSC251119TCc2,2025-11-19,Emilia Romagna,Ravenna,Ravenna,Caretta caretta,1,ND,47.0,CCL,Morto,,,ND,Guardia Costiera,Non disponibile,Guardia Costiera,12.30387,44.42871
+CSC251119TCc1,2025-11-19,Emilia Romagna,Ravenna,Ravenna,Caretta caretta,1,ND,55.0,CCL,Morto,,,ND,Guardia Costiera,Non disponibile,Guardia Costiera,12.30398,44.42852
 CSC251118TCc1,2025-11-18,Emilia Romagna,Ravenna,Ravenna,Caretta caretta,1,ND,39.0,CCL,Morto,,,ND,Guardia Costiera,Non disponibile,Guardia Costiera,12.28214,44.50644
 CSC251116TCc1,2025-11-16,Emilia Romagna,Ravenna,Ravenna,Caretta caretta,1,ND,81.0,CCL,Morto,,,ND,Guardia Costiera,Non disponibile,Guardia Costiera,12.30943,44.41829
 CSC251113TCc1,2025-11-13,Molise,Campobasso,Termoli,Caretta caretta,1,ND,44.0,CCL,Morto,,,ND,Guardia Costiera,Vincenzo Diana,CSC/ASL,14.9906,42.00424
@@ -55,15 +55,15 @@ CSC251104TCc2,2025-11-04,Marche,Ancona,Senigallia,Caretta caretta,1,ND,75.0,CCL,
 CSC251103TCc1,2025-11-03,Emilia Romagna,Ravenna,Ravenna,Caretta caretta,1,ND,58.0,CCL,Morto,,,ND,Guardia Costiera,Non disponibile,Guardia Costiera,12.30774,44.42061
 CSC251030TCc1,2025-10-30,Abruzzo,Pescara,Pescara,Caretta caretta,1,ND,56.0,CCL,Morto,,,ND,Guardia Costiera,Anna Angrilli,Centro Studi Cetacei,14.25144,42.44639
 CSC251029TCc1,2025-10-29,Puglia,Foggia,Vieste,Caretta caretta,1,ND,62.0,CCL,Morto,,,ND,Guardia Costiera,Jacopo Soccio,Centro Studi Cetacei,16.17855,41.88625
+CSC251027TCc3,2025-10-27,Abruzzo,Chieti,San Salvo,Caretta caretta,1,ND,52.5,CCL,Morto,,,ND,Guardia Costiera,Fabrizio Di Fonzo,ASL,14.77715,42.07143
 CSC251027TCc2,2025-10-27,Marche,Fermo,Fermo,Caretta caretta,1,ND,80.0,CCL,Morto,,,ND,Guardia Costiera,Non disponibile,Guardia Costiera,13.78534,43.21409
 CSC251027TCc1,2025-10-27,Marche,Fermo,Fermo,Caretta caretta,1,ND,60.0,CCL,Morto,,,ND,Guardia Costiera,Non disponibile,Guardia Costiera,13.78463,43.21513
-CSC251027TCc3,2025-10-27,Abruzzo,Chieti,San Salvo,Caretta caretta,1,ND,52.5,CCL,Morto,,,ND,Guardia Costiera,Fabrizio Di Fonzo,ASL,14.77715,42.07143
 CSC251022TCc1,2025-10-22,Abruzzo,Teramo,Pineto,Caretta caretta,1,ND,37.0,CCL,Morto,,,ND,Guardia Costiera,Matteo Ferretti,Centro Studi Cetacei,14.08833,42.58638
 CSC251022TCc2,2025-10-22,Abruzzo,Teramo,Silvi,Caretta caretta,1,ND,57.0,CCL,Morto,,,ND,Guardia Costiera,Francesca Trenta,ASL,14.10361,42.56958
-CSC251019TCc3,2025-10-19,Abruzzo,Chieti,Torino di Sangro,Caretta caretta,1,ND,45.0,CCL,Morto,,,ND,Guardia Costiera,Giancarlo Cinquina,ASL,14.59646,42.20899
+CSC251019TCc1,2025-10-19,Puglia,Foggia,Cagnano Varano,Caretta caretta,1,ND,29.0,CCL,Morto,,,ND,Guardia Costiera,Alberto Abbenante,ASL,15.7689,41.8376
 CSC251019TCc4,2025-10-19,Emilia Romagna,Ravenna,Ravenna,Caretta caretta,1,ND,55.0,CCL,Morto,,,ND,Guardia Costiera,Non disponibile,Guardia Costiera,12.30536,44.42481
 CSC251019TCc2,2025-10-19,Abruzzo,Teramo,Pineto,Caretta caretta,1,ND,35.0,CCL,Morto,,,ND,Guardia Costiera,Matteo Ferretti,Centro Studi Cetacei,14.09059,42.58482
-CSC251019TCc1,2025-10-19,Puglia,Foggia,Cagnano Varano,Caretta caretta,1,ND,29.0,CCL,Morto,,,ND,Guardia Costiera,Alberto Abbenante,ASL,15.7689,41.8376
+CSC251019TCc3,2025-10-19,Abruzzo,Chieti,Torino di Sangro,Caretta caretta,1,ND,45.0,CCL,Morto,,,ND,Guardia Costiera,Giancarlo Cinquina,ASL,14.59646,42.20899
 CSC251018TCc2,2025-10-18,Emilia Romagna,Ravenna,Ravenna,Caretta caretta,1,ND,39.0,CCL,Morto,,,ND,Guardia Costiera,Danilo Martinelli,Guardia Costiera,12.29824,44.44177
 CSC251018TCc1,2025-10-18,Molise,Campobasso,Termoli,Caretta caretta,1,ND,64.0,CCL,Morto,,,ND,Guardia Costiera,Vincenzo Diana,CSC/ASL,14.94156,42.01299
 CSC251011TCc1,2025-10-11,Abruzzo,Pescara,Montesilvano,Caretta caretta,1,ND,33.9,CCL,Morto,,,ND,Guardia Costiera,Anna Angrilli,Centro Studi Cetacei,14.15855,42.52108
