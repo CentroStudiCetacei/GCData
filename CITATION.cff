@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+authors:
+- family-names: "Di Lorenzo"
+  given-names: "Alessio"
+  orcid: "https://orcid.org/0000-0003-3222-2399"
+- family-names: "Di Renzo"
+  given-names: "Ludovica"
+  orcid: "https://orcid.org/0000-0002-2400-1740"
+- family-names: "Profico"
+  given-names: "Chiara"
+  orcid: "https://orcid.org/0000-0002-9131-048X"
+- family-names: "Profico"
+  given-names: "Daniela"
+  orcid: "https://orcid.org/0000-0001-5721-0410"
+- family-names: "Olivieri"
+  given-names: "Vincenzo"
+  orcid: "https://orcid.org/0000-0002-9131-048X"
+- family-names: "Guccione"
+  given-names: "Sergio"
+  orcid: "https://orcid.org/0000-0003-0832-7000"
+title: "GeoCetus: A dynamic and continuously updated open dataset of marine turtle and cetacean strandings in Italy"
+version: 1.0.0
+doi: 10.5281/zenodo.18739654
+date-released: 2026-02-23
+url: "https://github.com/CentroStudiCetacei/GCData" 
+keywords:
+  - "marine turtles"
+  - "cetaceans"
+  - "strandings"
+  - "Italy"
+  - "FAIR data"
