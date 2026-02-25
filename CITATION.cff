@@ -20,12 +20,12 @@ authors:
   given-names: "Sergio"
   orcid: "https://orcid.org/0000-0003-0832-7000"
 title: "GeoCetus: A dynamic and continuously updated open dataset of marine turtle and cetacean strandings in Italy"
-version: 1.0.0
+version: 1.1.0
 doi: 10.5281/zenodo.18739654
-date-released: 2026-02-23
+date-released: 2026-02-25
 url: "https://github.com/CentroStudiCetacei/GCData" 
 keywords:
-  - "marine turtles"
+  - "sea turtles"
   - "cetaceans"
   - "strandings"
   - "Italy"
