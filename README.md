@@ -23,4 +23,4 @@ https://github.com/CentroStudiCetacei/GCData/blob/main/data/csv/tartarughe.csv
 https://github.com/CentroStudiCetacei/GCData/blob/main/data/geo/tartarughe.geojson
 
 ## API
-Both datasets are also accessible programmatically through a RESTful API, as documented <a href="https://geocetus.it/api_home" target="_blank">here</a>
+Both datasets are also accessible programmatically through a RESTful API, as documented <a href="https://geocetus.it/api_home.php" target="_blank">here</a>
