@@ -19,17 +19,24 @@
       --grid: #d9e3e7;
       --error: #b02a37;
     }
+    html,
+    body {
+      height: 100%;
+    }
     body {
       margin: 0;
       font-family: "Segoe UI", Tahoma, sans-serif;
       background: linear-gradient(150deg, #eef4f1 0%, #f8fbfc 55%, #edf3f8 100%);
       color: var(--text);
+      overflow: hidden;
     }
     .wrapper {
       width: 90vw;
       max-width: 90vw;
-      margin: 30px auto;
-      padding: 0 0 20px;
+      height: 100vh;
+      margin: 0 auto;
+      padding: 10px 0;
+      box-sizing: border-box;
     }
     .card {
       background: var(--card);
@@ -37,21 +44,29 @@
       border-radius: 14px;
       padding: 16px;
       box-shadow: 0 12px 28px rgba(8, 38, 49, 0.07);
+      height: 100%;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      overflow: hidden;
     }
     h1 {
-      margin: 0 0 6px;
-      font-size: 1.5rem;
+      margin: 0 0 2px;
+      font-size: 1.15rem;
+      line-height: 1.2;
     }
     .subtitle {
-      margin: 0 0 14px;
+      margin: 0 0 8px;
       color: var(--muted);
-      font-size: 0.95rem;
+      font-size: 0.82rem;
+      line-height: 1.3;
     }
     .stats {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 10px;
-      margin-bottom: 14px;
+      margin-bottom: 6px;
     }
     .stat {
       border: 1px solid #e3ecef;
@@ -60,22 +75,24 @@
       background: #fbfdfd;
     }
     .stat .k {
-      font-size: 0.8rem;
+      font-size: 0.72rem;
       color: var(--muted);
       text-transform: uppercase;
       letter-spacing: 0.04em;
+      overflow-wrap: anywhere;
     }
     .stat .v {
       margin-top: 3px;
-      font-size: 1.2rem;
+      font-size: 1rem;
       font-weight: 700;
+      line-height: 1.1;
     }
     .range-panel {
       border: 1px solid #e3ecef;
       border-radius: 10px;
       background: #fbfdfd;
       padding: 10px 12px 14px;
-      margin-bottom: 16px;
+      margin-bottom: 6px;
     }
     .range-header {
       display: flex;
@@ -84,7 +101,7 @@
       gap: 8px;
       margin-bottom: 8px;
       color: var(--muted);
-      font-size: 0.9rem;
+      font-size: 0.82rem;
     }
     .range-sliders {
       position: relative;
@@ -134,6 +151,11 @@
       border-radius: 999px;
       background: transparent;
     }
+    .range-sliders input[type="range"]::-moz-range-progress {
+      height: 4px;
+      border-radius: 999px;
+      background: transparent;
+    }
     .range-bar {
       position: absolute;
       left: 0;
@@ -151,18 +173,26 @@
       left: 0;
       width: 0;
       background: linear-gradient(90deg, var(--cetaceans), var(--turtles));
+      pointer-events: auto;
+      cursor: grab;
+      touch-action: none;
+    }
+    .range-fill.is-dragging {
+      cursor: grabbing;
     }
     .section-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 12px;
-      margin-top: 12px;
+      margin-top: 2px;
+      flex: 0 0 auto;
     }
     .panel {
       border: 1px solid #e3ecef;
       border-radius: 10px;
       background: #fbfdfd;
       padding: 10px;
+      overflow: hidden;
     }
     .panel-head {
       display: flex;
@@ -173,8 +203,10 @@
     }
     .panel h2 {
       margin: 0;
-      font-size: 0.96rem;
+      font-size: 0.84rem;
+      line-height: 1.2;
       color: #234750;
+      overflow-wrap: anywhere;
     }
     .panel-expand-btn {
       border: 1px solid #c8d8de;
@@ -193,17 +225,91 @@
       height: 300px;
       transition: height 0.2s ease;
     }
+    .section-grid > .panel .viz-container {
+      min-height: clamp(130px, 18vh, 190px);
+      height: clamp(130px, 18vh, 190px);
+    }
     .viz-container > canvas,
     .viz-container > div {
       width: 100% !important;
       height: 100% !important;
     }
+    .viz-container {
+      overflow: hidden;
+    }
     .density-caption {
       margin: 2px 2px 0;
       padding: 2px 4px;
-      font-size: 0.9rem;
+      font-size: 0.78rem;
       line-height: 1.5;
       color: var(--muted);
+    }
+    .tabs-shell {
+      margin-top: 8px;
+      border: 1px solid #dce8ec;
+      border-radius: 12px;
+      background: #f8fcfd;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      min-height: 0;
+      flex: 1 1 auto;
+    }
+    .dashboard-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+    .dashboard-tab {
+      border: 1px solid #c8d8de;
+      background: #ffffff;
+      color: #2a4e59;
+      border-radius: 8px;
+      padding: 6px 9px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      max-width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .dashboard-tab:hover {
+      background: #eef7fa;
+    }
+    .dashboard-tab[aria-selected="true"] {
+      background: #1f6f8b;
+      border-color: #1f6f8b;
+      color: #ffffff;
+      box-shadow: 0 2px 8px rgba(16, 67, 86, 0.22);
+    }
+    .dashboard-tab:focus-visible {
+      outline: 2px solid #2a8cad;
+      outline-offset: 2px;
+    }
+    .tab-panel[hidden] {
+      display: none !important;
+    }
+    .tab-panel {
+      min-height: 0;
+      flex: 1 1 auto;
+    }
+    .tab-panel-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      height: 100%;
+    }
+    .tab-panel-grid .panel {
+      display: flex;
+      flex-direction: column;
+      min-height: 0;
+    }
+    .tab-panel-grid .viz-container {
+      min-height: clamp(140px, 20vh, 220px);
+      height: clamp(140px, 20vh, 220px);
+      flex: 1 1 auto;
     }
     .full {
       grid-column: 1 / -1;
@@ -214,9 +320,12 @@
       border: 1px solid #d9e3e7;
     }
     .status {
-      margin-top: 12px;
-      font-size: 0.9rem;
+      margin-top: 6px;
+      font-size: 0.78rem;
       color: var(--muted);
+      flex: 0 0 auto;
+      line-height: 1.25;
+      overflow-wrap: anywhere;
     }
     .chart-modal {
       position: fixed;
@@ -298,11 +407,30 @@
       vertical-align: middle;
     }
     @media (max-width: 1020px) {
+      body {
+        overflow: auto;
+      }
+      .wrapper {
+        height: auto;
+      }
+      .card {
+        height: auto;
+        overflow: visible;
+      }
+      .stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
       .section-grid {
+        grid-template-columns: 1fr;
+      }
+      .tab-panel-grid {
         grid-template-columns: 1fr;
       }
       .full {
         grid-column: auto;
+      }
+      .tabs-shell {
+        flex: 0 0 auto;
       }
     }
     @media (max-width: 640px) {
@@ -336,8 +464,16 @@
           <div class="v" id="tot-c">-</div>
         </div>
         <div class="stat">
-          <div class="k">Sea turtles records</div>
+          <div class="k">Cetacean species</div>
+          <div class="v" id="species-c">-</div>
+        </div>
+        <div class="stat">
+          <div class="k">Marine turtles records</div>
           <div class="v" id="tot-t">-</div>
+        </div>
+        <div class="stat">
+          <div class="k">Marine turtles species</div>
+          <div class="v" id="species-t">-</div>
         </div>
       </div>
 
@@ -366,103 +502,159 @@
           Density maps show the relative spatial concentration of stranding events. Values range from 0 (areas with very low records) to 1 (areas with the highest observed density).
         </div>
 
-        <div class="panel panel-expandable">
-          <div class="panel-head">
-            <h2>Annual Stranding Counts</h2>
-            <button type="button" class="panel-expand-btn" aria-label="Open chart in full screen"><span class="material-symbols-outlined" aria-hidden="true">open_in_full</span></button>
-          </div>
-          <div class="viz-container">
-            <canvas id="annualChart"></canvas>
+      </div>
+
+      <div class="tabs-shell">
+        <div class="dashboard-tabs" role="tablist" aria-label="Charts groups">
+          <button id="tab-trends" class="dashboard-tab" type="button" role="tab" aria-selected="true" aria-controls="panel-trends" tabindex="0">Trends</button>
+          <button id="tab-species" class="dashboard-tab" type="button" role="tab" aria-selected="false" aria-controls="panel-species" tabindex="-1">Species</button>
+          <button id="tab-regions" class="dashboard-tab" type="button" role="tab" aria-selected="false" aria-controls="panel-regions" tabindex="-1">Regions</button>
+          <button id="tab-length" class="dashboard-tab" type="button" role="tab" aria-selected="false" aria-controls="panel-length" tabindex="-1">Length</button>
+          <button id="tab-sex" class="dashboard-tab" type="button" role="tab" aria-selected="false" aria-controls="panel-sex" tabindex="-1">Sex</button>
+          <button id="tab-interaction" class="dashboard-tab" type="button" role="tab" aria-selected="false" aria-controls="panel-interaction" tabindex="-1">Interaction</button>
+        </div>
+
+        <div id="panel-trends" class="tab-panel" role="tabpanel" aria-labelledby="tab-trends">
+          <div class="tab-panel-grid">
+            <div class="panel panel-expandable">
+              <div class="panel-head">
+                <h2>Annual Stranding Counts</h2>
+                <button type="button" class="panel-expand-btn" aria-label="Open chart in full screen"><span class="material-symbols-outlined" aria-hidden="true">open_in_full</span></button>
+              </div>
+              <div class="viz-container">
+                <canvas id="annualChart"></canvas>
+              </div>
+            </div>
+
+            <div class="panel panel-expandable">
+              <div class="panel-head">
+                <h2>Monthly Seasonality of Strandings</h2>
+                <button type="button" class="panel-expand-btn" aria-label="Open chart in full screen"><span class="material-symbols-outlined" aria-hidden="true">open_in_full</span></button>
+              </div>
+              <div class="viz-container">
+                <canvas id="seasonalityChart"></canvas>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="panel panel-expandable">
-          <div class="panel-head">
-            <h2>Monthly Seasonality of Strandings</h2>
-            <button type="button" class="panel-expand-btn" aria-label="Open chart in full screen"><span class="material-symbols-outlined" aria-hidden="true">open_in_full</span></button>
-          </div>
-          <div class="viz-container">
-            <canvas id="seasonalityChart"></canvas>
+        <div id="panel-species" class="tab-panel" role="tabpanel" aria-labelledby="tab-species" hidden>
+          <div class="tab-panel-grid">
+            <div class="panel panel-expandable">
+              <div class="panel-head">
+                <h2>Annual Species Composition — Cetaceans</h2>
+                <button type="button" class="panel-expand-btn" aria-label="Open chart in full screen"><span class="material-symbols-outlined" aria-hidden="true">open_in_full</span></button>
+              </div>
+              <div class="viz-container">
+                <canvas id="speciesCetaceansChart"></canvas>
+              </div>
+            </div>
+
+            <div class="panel panel-expandable">
+              <div class="panel-head">
+                <h2>Annual Species Composition — Marine Turtles</h2>
+                <button type="button" class="panel-expand-btn" aria-label="Open chart in full screen"><span class="material-symbols-outlined" aria-hidden="true">open_in_full</span></button>
+              </div>
+              <div class="viz-container">
+                <canvas id="speciesTurtlesChart"></canvas>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="panel panel-expandable">
-          <div class="panel-head">
-            <h2>Annual Species Composition — Cetaceans</h2>
-            <button type="button" class="panel-expand-btn" aria-label="Open chart in full screen"><span class="material-symbols-outlined" aria-hidden="true">open_in_full</span></button>
-          </div>
-          <div class="viz-container">
-            <canvas id="speciesCetaceansChart"></canvas>
+        <div id="panel-regions" class="tab-panel" role="tabpanel" aria-labelledby="tab-regions" hidden>
+          <div class="tab-panel-grid">
+            <div class="panel panel-expandable">
+              <div class="panel-head">
+                <h2>Regional Species Composition — Cetaceans</h2>
+                <button type="button" class="panel-expand-btn" aria-label="Open chart in full screen"><span class="material-symbols-outlined" aria-hidden="true">open_in_full</span></button>
+              </div>
+              <div class="viz-container">
+                <canvas id="speciesCetaceansRegionChart"></canvas>
+              </div>
+            </div>
+
+            <div class="panel panel-expandable">
+              <div class="panel-head">
+                <h2>Regional Species Composition — Marine Turtles</h2>
+                <button type="button" class="panel-expand-btn" aria-label="Open chart in full screen"><span class="material-symbols-outlined" aria-hidden="true">open_in_full</span></button>
+              </div>
+              <div class="viz-container">
+                <canvas id="speciesTurtlesRegionChart"></canvas>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="panel panel-expandable">
-          <div class="panel-head">
-            <h2>Annual Species Composition — Marine Turtles</h2>
-            <button type="button" class="panel-expand-btn" aria-label="Open chart in full screen"><span class="material-symbols-outlined" aria-hidden="true">open_in_full</span></button>
-          </div>
-          <div class="viz-container">
-            <canvas id="speciesTurtlesChart"></canvas>
+        <div id="panel-length" class="tab-panel" role="tabpanel" aria-labelledby="tab-length" hidden>
+          <div class="tab-panel-grid">
+            <div class="panel panel-expandable">
+              <div class="panel-head">
+                <h2>Body Length Distribution — Cetaceans</h2>
+                <button type="button" class="panel-expand-btn" aria-label="Open chart in full screen"><span class="material-symbols-outlined" aria-hidden="true">open_in_full</span></button>
+              </div>
+              <div class="viz-container">
+                <canvas id="lengthChartCetaceans"></canvas>
+              </div>
+            </div>
+
+            <div class="panel panel-expandable">
+              <div class="panel-head">
+                <h2>Body Length Distribution — Marine Turtles</h2>
+                <button type="button" class="panel-expand-btn" aria-label="Open chart in full screen"><span class="material-symbols-outlined" aria-hidden="true">open_in_full</span></button>
+              </div>
+              <div class="viz-container">
+                <canvas id="lengthChartTurtles"></canvas>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="panel panel-expandable">
-          <div class="panel-head">
-            <h2>Regional Species Composition — Cetaceans</h2>
-            <button type="button" class="panel-expand-btn" aria-label="Open chart in full screen"><span class="material-symbols-outlined" aria-hidden="true">open_in_full</span></button>
-          </div>
-          <div class="viz-container">
-            <canvas id="speciesCetaceansRegionChart"></canvas>
+        <div id="panel-sex" class="tab-panel" role="tabpanel" aria-labelledby="tab-sex" hidden>
+          <div class="tab-panel-grid">
+            <div class="panel panel-expandable">
+              <div class="panel-head">
+                <h2>Sex Composition of Stranding Records</h2>
+                <button type="button" class="panel-expand-btn" aria-label="Open chart in full screen"><span class="material-symbols-outlined" aria-hidden="true">open_in_full</span></button>
+              </div>
+              <div class="viz-container">
+                <canvas id="sexChart"></canvas>
+              </div>
+            </div>
+
+            <div class="panel panel-expandable">
+              <div class="panel-head">
+                <h2>Monthly Sex Ratio (% Male, % Female)</h2>
+                <button type="button" class="panel-expand-btn" aria-label="Open chart in full screen"><span class="material-symbols-outlined" aria-hidden="true">open_in_full</span></button>
+              </div>
+              <div class="viz-container">
+                <canvas id="sexRatioChart"></canvas>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="panel panel-expandable">
-          <div class="panel-head">
-            <h2>Regional Species Composition — Marine Turtles</h2>
-            <button type="button" class="panel-expand-btn" aria-label="Open chart in full screen"><span class="material-symbols-outlined" aria-hidden="true">open_in_full</span></button>
-          </div>
-          <div class="viz-container">
-            <canvas id="speciesTurtlesRegionChart"></canvas>
-          </div>
-        </div>
+        <div id="panel-interaction" class="tab-panel" role="tabpanel" aria-labelledby="tab-interaction" hidden>
+          <div class="tab-panel-grid">
+            <div class="panel panel-expandable">
+              <div class="panel-head">
+                <h2>Interaction % - Cetaceans</h2>
+                <button type="button" class="panel-expand-btn" aria-label="Open chart in full screen"><span class="material-symbols-outlined" aria-hidden="true">open_in_full</span></button>
+              </div>
+              <div class="viz-container">
+                <canvas id="interactionCetaceansChart"></canvas>
+              </div>
+            </div>
 
-        <div class="panel panel-expandable">
-          <div class="panel-head">
-            <h2>Body Length Distribution — Cetaceans</h2>
-            <button type="button" class="panel-expand-btn" aria-label="Open chart in full screen"><span class="material-symbols-outlined" aria-hidden="true">open_in_full</span></button>
-          </div>
-          <div class="viz-container">
-            <canvas id="lengthChartCetaceans"></canvas>
-          </div>
-        </div>
-
-        <div class="panel panel-expandable">
-          <div class="panel-head">
-            <h2>Body Length Distribution — Marine Turtles</h2>
-            <button type="button" class="panel-expand-btn" aria-label="Open chart in full screen"><span class="material-symbols-outlined" aria-hidden="true">open_in_full</span></button>
-          </div>
-          <div class="viz-container">
-            <canvas id="lengthChartTurtles"></canvas>
-          </div>
-        </div>
-
-        <div class="panel panel-expandable">
-          <div class="panel-head">
-            <h2>Sex Composition of Stranding Records</h2>
-            <button type="button" class="panel-expand-btn" aria-label="Open chart in full screen"><span class="material-symbols-outlined" aria-hidden="true">open_in_full</span></button>
-          </div>
-          <div class="viz-container">
-            <canvas id="sexChart"></canvas>
-          </div>
-        </div>
-
-        <div class="panel panel-expandable">
-          <div class="panel-head">
-            <h2>Monthly Sex Ratio (% Male, % Female)</h2>
-            <button type="button" class="panel-expand-btn" aria-label="Open chart in full screen"><span class="material-symbols-outlined" aria-hidden="true">open_in_full</span></button>
-          </div>
-          <div class="viz-container">
-            <canvas id="sexRatioChart"></canvas>
+            <div class="panel panel-expandable">
+              <div class="panel-head">
+                <h2>Interaction % - Marine turtles</h2>
+                <button type="button" class="panel-expand-btn" aria-label="Open chart in full screen"><span class="material-symbols-outlined" aria-hidden="true">open_in_full</span></button>
+              </div>
+              <div class="viz-container">
+                <canvas id="interactionTurtlesChart"></canvas>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -509,8 +701,22 @@
       lengthCetaceans: null,
       lengthTurtles: null,
       sex: null,
-      sexRatio: null
+      sexRatio: null,
+      interactionCetaceans: null,
+      interactionTurtles: null
     };
+
+    if (window.Chart?.defaults) {
+      Chart.defaults.animation = false;
+      Chart.defaults.font.size = 10;
+      Chart.defaults.plugins.legend.labels.boxWidth = 10;
+      Chart.defaults.plugins.legend.labels.padding = 8;
+      const transitionKeys = ["active", "resize", "show", "hide"];
+      for (const key of transitionKeys) {
+        const animation = Chart.defaults.transitions?.[key]?.animation;
+        if (animation) animation.duration = 0;
+      }
+    }
 
     const RESIZE_DELAY_MS = 230;
 
@@ -534,7 +740,32 @@
 
     function getSpecies(feature) {
       const v = feature?.properties?.specie;
-      return typeof v === "string" && v.trim() ? v.trim() : "Unknown";
+      if (typeof v !== "string" || !v.trim()) return "Unknown";
+      const species = v.trim();
+      if (species.localeCompare("Indeterminato", "it", { sensitivity: "base" }) === 0) {
+        return "Unidentified";
+      }
+      return species;
+    }
+
+    function toScientificSpeciesLabel(name) {
+      if (!name || name === "Unidentified" || name === "Unknown") return name;
+      const parts = name.trim().split(/\s+/);
+      if (parts.length < 2) return name;
+      const genus = parts[0];
+      if (!genus || genus.endsWith(".")) return name;
+      const epithet = parts.slice(1).join(" ");
+      return `${genus[0].toUpperCase()}. ${epithet}`;
+    }
+
+    function countDistinctSpecies(features) {
+      const set = new Set();
+      for (const f of features) {
+        const s = getSpecies(f);
+        if (s === "Unknown" || s === "Unidentified") continue;
+        set.add(s);
+      }
+      return set.size;
     }
 
     function getRegion(feature) {
@@ -557,6 +788,28 @@
       if (s === "M") return "Male";
       if (s === "F") return "Female";
       return "Unknown";
+    }
+
+    function getInteraction(feature) {
+      const p = feature?.properties || {};
+      const candidates = [
+        p.interazione,
+        p.interaction,
+        p.tipo_interazione,
+        p.tipologia_interazione,
+        p.interazione_antropica,
+        p.causa_interazione,
+        p.categoria_interazione
+      ];
+      for (const value of candidates) {
+        if (typeof value !== "string" || !value.trim()) continue;
+        const normalized = value.trim().toLowerCase();
+        if (["yes", "y", "si", "s", "true", "1"].includes(normalized)) return "Yes";
+        if (["no", "n", "false", "0"].includes(normalized)) return "No";
+        if (["unknown", "unknow", "indeterminato", "unidentified", "na", "n/a"].includes(normalized)) return "Unknow";
+        return "Unknow";
+      }
+      return "Unknow";
     }
 
     function getLength(feature) {
@@ -697,7 +950,7 @@
       }
       const palette = paletteFn(species.length);
       const datasets = species.map((s, i) => ({
-        label: s,
+        label: toScientificSpeciesLabel(s),
         data: matrix.get(s),
         backgroundColor: palette[i],
         borderWidth: 0
@@ -735,12 +988,90 @@
       }
       const palette = paletteFn(species.length);
       const datasets = species.map((s, i) => ({
-        label: s,
+        label: toScientificSpeciesLabel(s),
         data: matrix.get(s),
         backgroundColor: palette[i],
         borderWidth: 0
       }));
       return { regions, datasets };
+    }
+
+    function interactionStackedPercentData(features, yearLabels, groupKey) {
+      const yearIndex = new Map(yearLabels.map((y, i) => [y, i]));
+      const countsByInteraction = new Map();
+      const totalsByYear = Array(yearLabels.length).fill(0);
+
+      for (const f of features) {
+        const y = getYear(f);
+        const idx = yearIndex.get(y);
+        if (idx === undefined) continue;
+        const interaction = getInteraction(f);
+        if (!countsByInteraction.has(interaction)) {
+          countsByInteraction.set(interaction, Array(yearLabels.length).fill(0));
+        }
+        countsByInteraction.get(interaction)[idx] += 1;
+        totalsByYear[idx] += 1;
+      }
+
+      const interactions = ["Yes", "No", "Unknow"];
+      for (const label of interactions) {
+        if (!countsByInteraction.has(label)) {
+          countsByInteraction.set(label, Array(yearLabels.length).fill(0));
+        }
+      }
+
+      const interactionColorsByGroup = {
+        cetaceans: {
+          Yes: "rgba(112, 193, 255, 0.9)",
+          No: "rgba(22, 110, 170, 0.9)",
+          Unknow: "rgba(120, 120, 120, 0.82)"
+        },
+        turtles: {
+          Yes: "rgba(123, 213, 157, 0.9)",
+          No: "rgba(39, 122, 72, 0.9)",
+          Unknow: "rgba(120, 120, 120, 0.82)"
+        }
+      };
+      const interactionColors = interactionColorsByGroup[groupKey] || interactionColorsByGroup.cetaceans;
+
+      const datasets = interactions.map((interaction) => {
+        const absolute = countsByInteraction.get(interaction);
+        const percent = absolute.map((count, idx) => {
+          const total = totalsByYear[idx];
+          if (!total) return 0;
+          return Number(((count / total) * 100).toFixed(1));
+        });
+        return {
+          label: interaction,
+          data: percent,
+          rawCounts: absolute,
+          backgroundColor: interactionColors[interaction],
+          borderWidth: 0
+        };
+      });
+
+      return { datasets };
+    }
+
+    function normalizeInteractionDatasets(chart) {
+      const visibleDatasets = chart.data.datasets.map((dataset, datasetIndex) => ({
+        dataset,
+        isVisible: chart.isDatasetVisible(datasetIndex)
+      }));
+      const points = chart.data.labels.length;
+      for (let pointIndex = 0; pointIndex < points; pointIndex += 1) {
+        let visibleTotal = 0;
+        for (const item of visibleDatasets) {
+          if (!item.isVisible) continue;
+          visibleTotal += Number(item.dataset.rawCounts?.[pointIndex] || 0);
+        }
+        for (const item of visibleDatasets) {
+          const count = Number(item.dataset.rawCounts?.[pointIndex] || 0);
+          item.dataset.data[pointIndex] = visibleTotal > 0
+            ? Number(((count / visibleTotal) * 100).toFixed(1))
+            : 0;
+        }
+      }
     }
 
     function buildHistogram(cLengths, tLengths, bins = 12) {
@@ -961,6 +1292,55 @@
           }
         }
       });
+    }
+
+    function renderInteractionStacked100(chartKey, elementId, features, yearLabels, groupKey) {
+      destroyChart(chartKey);
+      const stacked = interactionStackedPercentData(features, yearLabels, groupKey);
+      chartState[chartKey] = new Chart(document.getElementById(elementId), {
+        type: "bar",
+        data: {
+          labels: yearLabels,
+          datasets: stacked.datasets
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              position: "right",
+              labels: { boxWidth: 12, font: { size: 10 } },
+              onClick(event, legendItem, legend) {
+                Chart.defaults.plugins.legend.onClick.call(this, event, legendItem, legend);
+                const chart = legend.chart;
+                normalizeInteractionDatasets(chart);
+                chart.update();
+              }
+            },
+            tooltip: {
+              callbacks: {
+                label(context) {
+                  const count = context.dataset.rawCounts?.[context.dataIndex] || 0;
+                  const pct = Number(context.parsed.y || 0).toFixed(1);
+                  return `${context.dataset.label}: ${pct}% (${count})`;
+                }
+              }
+            }
+          },
+          scales: {
+            x: { stacked: true, grid: { color: "rgba(217, 227, 231, 0.22)" } },
+            y: {
+              stacked: true,
+              min: 0,
+              max: 100,
+              title: { display: true, text: "% of annual records" },
+              grid: { color: "#d9e3e7" }
+            }
+          }
+        }
+      });
+      normalizeInteractionDatasets(chartState[chartKey]);
+      chartState[chartKey].update("none");
     }
 
     function renderLengthCharts(cFeatures, tFeatures) {
@@ -1189,8 +1569,28 @@
     function renderDensityMap(elementId, features, colorscale) {
       const coords = pointsForDensity(features);
       const hasData = coords.lat.length > 0;
-      const center = { lat: 42, lon: 14 };
-      const zoom = 4;
+      let center = { lat: 42, lon: 14 };
+      let zoom = 2.8;
+      if (hasData) {
+        const minLat = Math.min(...coords.lat);
+        const maxLat = Math.max(...coords.lat);
+        const minLon = Math.min(...coords.lon);
+        const maxLon = Math.max(...coords.lon);
+        center = {
+          lat: (minLat + maxLat) / 2,
+          lon: (minLon + maxLon) / 2
+        };
+        const latSpan = Math.max(0.1, maxLat - minLat);
+        const lonSpan = Math.max(0.1, maxLon - minLon);
+        const span = Math.max(latSpan, lonSpan) * 1.25;
+        if (span > 36) zoom = 2.1;
+        else if (span > 24) zoom = 2.4;
+        else if (span > 16) zoom = 2.8;
+        else if (span > 10) zoom = 3.2;
+        else if (span > 6) zoom = 3.6;
+        else if (span > 3) zoom = 4.0;
+        else zoom = 4.5;
+      }
 
       const data = [{
         type: "densitymap",
@@ -1313,6 +1713,58 @@
       });
     }
 
+    function initDashboardTabs() {
+      const tabList = document.querySelector(".dashboard-tabs");
+      if (!tabList) return;
+      const tabs = Array.from(tabList.querySelectorAll('[role="tab"]'));
+      if (!tabs.length) return;
+
+      function activateTab(nextTab, setFocus = false) {
+        for (const tab of tabs) {
+          const isActive = tab === nextTab;
+          const panelId = tab.getAttribute("aria-controls");
+          const panel = panelId ? document.getElementById(panelId) : null;
+          tab.setAttribute("aria-selected", isActive ? "true" : "false");
+          tab.tabIndex = isActive ? 0 : -1;
+          if (panel) panel.hidden = !isActive;
+        }
+        const activePanelId = nextTab.getAttribute("aria-controls");
+        const activePanel = activePanelId ? document.getElementById(activePanelId) : null;
+        if (activePanel) {
+          window.setTimeout(() => resizeVisual(activePanel), RESIZE_DELAY_MS);
+        }
+        if (setFocus) nextTab.focus();
+      }
+
+      function moveFocus(currentIndex, direction) {
+        const count = tabs.length;
+        const nextIndex = (currentIndex + direction + count) % count;
+        activateTab(tabs[nextIndex], true);
+      }
+
+      tabs.forEach((tab, index) => {
+        tab.addEventListener("click", () => activateTab(tab));
+        tab.addEventListener("keydown", (event) => {
+          if (event.key === "ArrowRight") {
+            event.preventDefault();
+            moveFocus(index, 1);
+          } else if (event.key === "ArrowLeft") {
+            event.preventDefault();
+            moveFocus(index, -1);
+          } else if (event.key === "Home") {
+            event.preventDefault();
+            activateTab(tabs[0], true);
+          } else if (event.key === "End") {
+            event.preventDefault();
+            activateTab(tabs[tabs.length - 1], true);
+          }
+        });
+      });
+
+      const defaultTab = tabs.find((tab) => tab.getAttribute("aria-selected") === "true") || tabs[0];
+      activateTab(defaultTab);
+    }
+
     function updateRangeFill(fill, startValue, endValue, minYear, maxYear) {
       if (!fill) return;
       const span = Math.max(1, maxYear - minYear);
@@ -1333,6 +1785,8 @@
       renderLengthCharts(cFiltered, tFiltered);
       renderSexChart(cFiltered, tFiltered);
       renderSexRatioChart(cFiltered, tFiltered);
+      renderInteractionStacked100("interactionCetaceans", "interactionCetaceansChart", cFiltered, yearLabels, "cetaceans");
+      renderInteractionStacked100("interactionTurtles", "interactionTurtlesChart", tFiltered, yearLabels, "turtles");
       renderDensityMap("map-cetaceans", cFiltered, "Viridis");
       renderDensityMap("map-turtles", tFiltered, "Viridis");
     }
@@ -1348,56 +1802,139 @@
       const modalRangeFill = document.getElementById("modal-range-fill");
       const status = document.getElementById("status");
 
+      const minBoundaryYear = minYear;
+      const maxBoundaryYear = maxYear + 1;
       const allInputs = [minInput, maxInput, modalMinInput, modalMaxInput];
       for (const input of allInputs) {
         if (!input) continue;
-        input.min = String(minYear);
-        input.max = String(maxYear);
+        input.min = String(minBoundaryYear);
+        input.max = String(maxBoundaryYear);
       }
 
-      let startYear = minYear;
-      let endYear = maxYear;
+      let startBoundaryYear = minBoundaryYear;
+      let endBoundaryYear = maxBoundaryYear;
+      let isDraggingRange = false;
+      let dragState = null;
+      const dragFillElements = [rangeFill, modalRangeFill].filter(Boolean);
+
+      function clamp(value, min, max) {
+        return Math.min(max, Math.max(min, value));
+      }
+
+      function formatPeriodRange(start, end) {
+        return `${start}-01-01/${end}-12-31`;
+      }
+
+      function getSelectedStartYear() {
+        return startBoundaryYear;
+      }
+
+      function getSelectedEndYear() {
+        return endBoundaryYear - 1;
+      }
 
       function syncRangeInputs() {
-        if (minInput) minInput.value = String(startYear);
-        if (maxInput) maxInput.value = String(endYear);
-        if (modalMinInput) modalMinInput.value = String(startYear);
-        if (modalMaxInput) modalMaxInput.value = String(endYear);
+        if (minInput) minInput.value = String(startBoundaryYear);
+        if (maxInput) maxInput.value = String(endBoundaryYear);
+        if (modalMinInput) modalMinInput.value = String(startBoundaryYear);
+        if (modalMaxInput) modalMaxInput.value = String(endBoundaryYear);
       }
 
       function refresh() {
+        const startYear = getSelectedStartYear();
+        const endYear = getSelectedEndYear();
         const cFiltered = filterByYearRange(cAll, startYear, endYear);
         const tFiltered = filterByYearRange(tAll, startYear, endYear);
         const yearLabels = makeYearLabels(startYear, endYear);
 
         document.getElementById("tot-c").textContent = cFiltered.length.toLocaleString("en-US");
         document.getElementById("tot-t").textContent = tFiltered.length.toLocaleString("en-US");
+        const speciesC = document.getElementById("species-c");
+        const speciesT = document.getElementById("species-t");
+        if (speciesC) speciesC.textContent = countDistinctSpecies(cFiltered).toLocaleString("en-US");
+        if (speciesT) speciesT.textContent = countDistinctSpecies(tFiltered).toLocaleString("en-US");
         rangeLabel.textContent = `${startYear} - ${endYear}`;
         if (modalRangeLabel) modalRangeLabel.textContent = `${startYear} - ${endYear}`;
-        updateRangeFill(rangeFill, startYear, endYear, minYear, maxYear);
-        updateRangeFill(modalRangeFill, startYear, endYear, minYear, maxYear);
+        updateRangeFill(rangeFill, startBoundaryYear, endBoundaryYear, minBoundaryYear, maxBoundaryYear);
+        updateRangeFill(modalRangeFill, startBoundaryYear, endBoundaryYear, minBoundaryYear, maxBoundaryYear);
         renderAll(cFiltered, tFiltered, yearLabels);
-        status.textContent = `Dashboard updated for years ${startYear}-${endYear}.`;
+        const period = formatPeriodRange(startYear, endYear);
+        status.textContent = `Dashboard updated for years ${startYear}-${endYear} (period=${period}).`;
       }
 
       function onMinInput(value) {
-        startYear = value;
-        if (startYear > endYear) endYear = startYear;
+        if (isDraggingRange) return;
+        startBoundaryYear = clamp(value, minBoundaryYear, endBoundaryYear - 1);
         syncRangeInputs();
         refresh();
       }
 
       function onMaxInput(value) {
-        endYear = value;
-        if (endYear < startYear) startYear = endYear;
+        if (isDraggingRange) return;
+        endBoundaryYear = clamp(value, startBoundaryYear + 1, maxBoundaryYear);
         syncRangeInputs();
         refresh();
+      }
+
+      function setDragCursor(active) {
+        for (const fill of dragFillElements) {
+          fill.classList.toggle("is-dragging", active);
+        }
+      }
+
+      function stopRangeDrag() {
+        if (!isDraggingRange) return;
+        isDraggingRange = false;
+        dragState = null;
+        setDragCursor(false);
+        document.removeEventListener("pointermove", onRangeDragMove);
+        document.removeEventListener("pointerup", stopRangeDrag);
+        document.removeEventListener("pointercancel", stopRangeDrag);
+      }
+
+      function onRangeDragMove(event) {
+        if (!isDraggingRange || !dragState) return;
+        const deltaX = event.clientX - dragState.startX;
+        const deltaYears = Math.round(deltaX / dragState.pxPerYear);
+        const maxStart = maxBoundaryYear - dragState.windowSize;
+        const nextStart = clamp(dragState.startAtDown + deltaYears, minBoundaryYear, maxStart);
+        const nextEnd = nextStart + dragState.windowSize;
+        if (nextStart === startBoundaryYear && nextEnd === endBoundaryYear) return;
+        startBoundaryYear = nextStart;
+        endBoundaryYear = nextEnd;
+        syncRangeInputs();
+        refresh();
+      }
+
+      function beginRangeDrag(event) {
+        if (isDraggingRange) return;
+        const bar = event.currentTarget?.parentElement;
+        if (!bar) return;
+        const totalYears = maxBoundaryYear - minBoundaryYear;
+        if (totalYears <= 0) return;
+        const rect = bar.getBoundingClientRect();
+        if (!rect.width) return;
+
+        event.preventDefault();
+        isDraggingRange = true;
+        dragState = {
+          startX: event.clientX,
+          startAtDown: startBoundaryYear,
+          windowSize: endBoundaryYear - startBoundaryYear,
+          pxPerYear: rect.width / Math.max(1, totalYears)
+        };
+        setDragCursor(true);
+        document.addEventListener("pointermove", onRangeDragMove);
+        document.addEventListener("pointerup", stopRangeDrag);
+        document.addEventListener("pointercancel", stopRangeDrag);
       }
 
       if (minInput) minInput.addEventListener("input", () => onMinInput(Number(minInput.value)));
       if (modalMinInput) modalMinInput.addEventListener("input", () => onMinInput(Number(modalMinInput.value)));
       if (maxInput) maxInput.addEventListener("input", () => onMaxInput(Number(maxInput.value)));
       if (modalMaxInput) modalMaxInput.addEventListener("input", () => onMaxInput(Number(modalMaxInput.value)));
+      if (rangeFill) rangeFill.addEventListener("pointerdown", beginRangeDrag);
+      if (modalRangeFill) modalRangeFill.addEventListener("pointerdown", beginRangeDrag);
 
       syncRangeInputs();
       refresh();
@@ -1429,6 +1966,7 @@
     }
 
     initChartModal();
+    initDashboardTabs();
     run();
   </script>
 </body>
