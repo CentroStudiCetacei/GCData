@@ -13,6 +13,10 @@ We believe that data should be treated as a shared resource: openly accessible d
 
 The GeoCetus datasets are published as <a href="http://it.wikipedia.org/wiki/Dati_aperti" target="_blank">open data</a> and distributed under a <a href="http://creativecommons.org/licenses/by-sa/3.0/it/" target="_blank">Creative Commons</a> license.
 
+**Please cite this work when using GeoCetus data:**
+
+> Di Lorenzo, A.; Di Renzo, L.; Profico, C.; Profico, D.; Olivieri, V.; Guccione, S. *GeoCetus: A Multi-Decadal Open Geospatial Infrastructure for the Continuous Monitoring of Marine Strandings in Italy*. **Animals** 2026, 16, 1323. https://doi.org/10.3390/ani16091323
+
 
 ## Cetaceans
 https://github.com/CentroStudiCetacei/GCData/blob/main/data/csv/cetacei.csv
