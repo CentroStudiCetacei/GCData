@@ -1,9 +1,9 @@
 codice,data_rilievo,regione,provincia,comune,specie,cod_specie,sesso,lunghezza_cm,tipo_lunghezza,condizioni,tag,tag_rilascio,interazione,segnalato_da,rilevatore,struttura_rilevatore,lng,lat
 CSC260518TCc1,2026-05-18,Abruzzo,Chieti,Vasto,Caretta caretta,1,ND,70.0,CCL,Morto,,,ND,Guardia Costiera,Quintino Rossi,ASL,14.68213,42.18025
 CSC260517TCc1,2026-05-17,Emilia Romagna,Ravenna,Ravenna,Caretta caretta,1,ND,45.0,CCL,Morto,,,ND,Guardia Costiera,Luigi Briganti,Guardia Costiera,12.29512,44.44854
-CSC260513TCc2,2026-05-13,Puglia,Foggia,Ischitella,Caretta caretta,1,ND,,,Morto,,,ND,Guardia Costiera,Jacopo Soccio,ASL,15.74249,41.91603
-CSC260513TCc3,2026-05-13,Abruzzo,Teramo,Roseto degli Abruzzi,Caretta caretta,1,F,85.3,CCL,Morto,,,ND,Guardia Costiera,Chiara Profico,Centro Studi Cetacei,14.0235,42.67087
 CSC260513TCc1,2026-05-13,Abruzzo,Chieti,Vasto,Caretta caretta,1,ND,85.0,TOT,Morto,,,ND,Guardia Costiera,Giancarlo Cinquina,ASL,14.70078,42.17463
+CSC260513TCc3,2026-05-13,Abruzzo,Teramo,Roseto degli Abruzzi,Caretta caretta,1,F,85.3,CCL,Morto,,,ND,Guardia Costiera,Chiara Profico,Centro Studi Cetacei,14.0235,42.67087
+CSC260513TCc2,2026-05-13,Puglia,Foggia,Ischitella,Caretta caretta,1,ND,,,Morto,,,ND,Guardia Costiera,Jacopo Soccio,ASL,15.74249,41.91603
 CSC260504TCc1,2026-05-04,Puglia,Foggia,Rodi Garganico,Caretta caretta,1,ND,41.0,CCL,Morto,,,ND,Guardia Costiera,Jacopo Soccio,ASL,15.82919,41.92345
 CSC260503TCc2,2026-05-03,Lazio,Latina,Ponza,Caretta caretta,1,ND,60.0,CCL,Morto,,,ND,Guardia Costiera,Non disponibile,Guardia Costiera,12.9595,40.9055
 CSC260503TCc1,2026-05-03,Puglia,Foggia,Zapponeta,Caretta caretta,1,ND,60.0,CCL,Morto,,,ND,Guardia Costiera,Rachele Maria Totta,ASL,15.93152,41.48584
