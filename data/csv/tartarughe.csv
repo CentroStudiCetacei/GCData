@@ -1,23 +1,23 @@
 codice,data_rilievo,regione,provincia,comune,specie,cod_specie,sesso,lunghezza_cm,tipo_lunghezza,condizioni,tag,tag_rilascio,interazione,segnalato_da,rilevatore,struttura_rilevatore,lng,lat
 CSC260629TCc3,2026-06-29,Marche,Macerata,Civitanova Marche,Caretta caretta,1,ND,60.0,CCL,Morto,,,ND,Guardia Costiera,Non disponibile,Guardia Costiera,13.73444,43.30833
-CSC260629TCc1,2026-06-29,Abruzzo,Teramo,Roseto degli Abruzzi,Caretta caretta,1,F,77.0,CCL,Morto,,,ND,Guardia Costiera,Claudia Borgatti,Centro Studi Cetacei,14.02189,42.67537
 CSC260629TCc2,2026-06-29,Abruzzo,Teramo,Silvi,Caretta caretta,1,ND,38.0,CCL,Morto,,,ND,Guardia Costiera,Francesca Trenta,Centro Studi Cetacei,14.12389,42.54916
+CSC260629TCc1,2026-06-29,Abruzzo,Teramo,Roseto degli Abruzzi,Caretta caretta,1,F,77.0,CCL,Morto,,,ND,Guardia Costiera,Claudia Borgatti,Centro Studi Cetacei,14.02189,42.67537
 CSC260627TCc1,2026-06-27,Puglia,Foggia,Serracapriola,Caretta caretta,1,ND,54.0,CCL,Morto,,,ND,Guardia Costiera,Jacopo Soccio,ASL,15.3103,41.91808
-CSC260626TCc1,2026-06-26,Molise,Campobasso,Termoli,Caretta caretta,1,ND,68.0,CCL,Morto,,,ND,Guardia Costiera,Gianluca Barbuto,Centro Studi Cetacei,14.9163,42.01775
 CSC260626TCm1,2026-06-26,Molise,Campobasso,Termoli,Chelonia mydas,2,ND,50.0,CCL,Morto,,,ND,Guardia Costiera,Gianluca Barbuto,Centro Studi Cetacei,14.95828,42.00996
-CSC260625TCc1,2026-06-25,Molise,Campobasso,Termoli,Caretta caretta,1,ND,21.0,CCL,Morto,,,ND,Guardia Costiera,Gianfranco Tetta,ASREM,14.9898,42.00541
-CSC260624TCc2,2026-06-24,Abruzzo,Pescara,Pescara,Caretta caretta,1,ND,60.4,CCL,Morto,,,ND,Guardia Costiera,Anna Angrilli,Centro Studi Cetacei,14.18556,42.49365
+CSC260626TCc1,2026-06-26,Molise,Campobasso,Termoli,Caretta caretta,1,ND,68.0,CCL,Morto,,,ND,Guardia Costiera,Gianluca Barbuto,Centro Studi Cetacei,14.9163,42.01775
+CSC260625TCm1,2026-06-25,Molise,Campobasso,Termoli,Chelonia mydas,2,F,29.0,CCL,Morto,,,ND,Guardia Costiera,Ludovica Di Renzo,CSC/IZSAM,14.9898,42.00541
 CSC260624TCc1,2026-06-24,Abruzzo,Teramo,Roseto degli Abruzzi,Caretta caretta,1,ND,24.0,CCL,Morto,,,ND,Guardia Costiera,Claudia Borgatti,Centro Studi Cetacei,13.99852,42.70473
+CSC260624TCc2,2026-06-24,Abruzzo,Pescara,Pescara,Caretta caretta,1,ND,60.4,CCL,Morto,,,ND,Guardia Costiera,Anna Angrilli,Centro Studi Cetacei,14.18556,42.49365
 CSC260622TCc1,2026-06-22,Abruzzo,Teramo,Giulianova,Caretta caretta,1,ND,47.0,CCL,Morto,,,ND,Guardia Costiera,Chiara Profico,Centro Studi Cetacei,13.97566,42.74982
 CSC260620TCc1,2026-06-20,Emilia Romagna,Ravenna,Ravenna,Caretta caretta,1,ND,45.0,CCL,Morto,,,ND,Guardia Costiera,Non disponibile,Guardia Costiera,12.33256,44.33908
-CSC260619TCc1,2026-06-19,Emilia Romagna,Ravenna,Ravenna,Caretta caretta,1,ND,40.0,CCL,Morto,,,ND,Guardia Costiera,Non disponibile,Guardia Costiera,12.35504,44.31237
 CSC260619TCc2,2026-06-19,Puglia,Foggia,Chieuti,Caretta caretta,1,ND,38.0,CCL,Morto,,,ND,Guardia Costiera,Jacopo Soccio,ASL,15.15569,41.92387
+CSC260619TCc1,2026-06-19,Emilia Romagna,Ravenna,Ravenna,Caretta caretta,1,ND,40.0,CCL,Morto,,,ND,Guardia Costiera,Non disponibile,Guardia Costiera,12.35504,44.31237
 CSC260618TCc2,2026-06-18,Abruzzo,Chieti,Vasto,Caretta caretta,1,ND,28.0,CCL,Morto,,,ND,Guardia Costiera,Giancarlo Cinquina,ASL,14.72875,42.09481
 CSC260618TCc1,2026-06-18,Abruzzo,Teramo,Silvi,Caretta caretta,1,F,73.0,CCL,Morto,,,ND,Guardia Costiera,Francesca Trenta,Centro Studi Cetacei,14.13413,42.54021
 CSC260617TCc1,2026-06-17,Emilia Romagna,Ravenna,Ravenna,Caretta caretta,1,ND,55.0,CCL,Morto,FC1048,,ND,Guardia Costiera,Non disponibile,Guardia Costiera,12.28705,44.47062
-CSC260616TCc1,2026-06-16,Emilia Romagna,Ravenna,Ravenna,Caretta caretta,1,ND,58.0,CCL,Morto,,,ND,Guardia Costiera,Non disponibile,Guardia Costiera,12.2802,44.53433
-CSC260616TCc2,2026-06-16,Emilia Romagna,Ravenna,Ravenna,Caretta caretta,1,ND,31.0,CCL,Morto,,,ND,Guardia Costiera,Non disponibile,Guardia Costiera,12.27965,44.52388
 CSC260616TCc3,2026-06-16,Abruzzo,Chieti,Ortona,Caretta caretta,1,ND,62.0,CCL,Morto,,,ND,Guardia Costiera,Fausto Barbone,Centro Studi Cetacei,14.43568,42.31774
+CSC260616TCc2,2026-06-16,Emilia Romagna,Ravenna,Ravenna,Caretta caretta,1,ND,31.0,CCL,Morto,,,ND,Guardia Costiera,Non disponibile,Guardia Costiera,12.27965,44.52388
+CSC260616TCc1,2026-06-16,Emilia Romagna,Ravenna,Ravenna,Caretta caretta,1,ND,58.0,CCL,Morto,,,ND,Guardia Costiera,Non disponibile,Guardia Costiera,12.2802,44.53433
 CSC260616TCc4,2026-06-16,Abruzzo,Chieti,Vasto,Caretta caretta,1,ND,73.0,CCL,Morto,,,ND,Guardia Costiera,Giancarlo Cinquina,ASL,14.69369,42.17663
 CSC260615TCc1,2026-06-15,Abruzzo,Chieti,San Salvo,Caretta caretta,1,ND,46.4,CCL,Vivo,,CSCIT403,ND,Guardia Costiera,Anna Angrilli,Centro Studi Cetacei,14.77806,42.07099
 CSC260614TCc1,2026-06-14,Abruzzo,Teramo,Pineto,Caretta caretta,1,ND,32.0,CCL,Morto,,,ND,Guardia Costiera,Claudia Borgatti,Centro Studi Cetacei,14.04543,42.64343
