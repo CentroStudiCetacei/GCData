@@ -1,7 +1,7 @@
 codice,data_rilievo,regione,provincia,comune,specie,cod_specie,sesso,lunghezza_cm,tipo_lunghezza,condizioni,tag,tag_rilascio,interazione,segnalato_da,rilevatore,struttura_rilevatore,lng,lat
 CSC260811TCc1,2026-08-11,Puglia,Foggia,Rodi Garganico,Caretta caretta,1,ND,50.0,CCL,Morto,,,ND,Guardia Costiera,Rachele Maria Totta,Guardia Costiera,15.84286,41.92558
 CSC260811TCc2,2026-08-11,Abruzzo,Teramo,Roseto degli Abruzzi,Caretta caretta,1,ND,46.0,CCL,Morto,,,ND,Guardia Costiera,Marco Borgatti,Centro Studi Cetacei,14.01382,42.68388
-CSC260810TCc1,2026-08-10,Molise,Campobasso,Termoli,Caretta caretta,1,ND,,,Morto,,,ND,Guardia Costiera,Nicola Marrone,ASREM,14.92221,42.0166
+CSC260810TCc1,2026-08-10,Molise,Campobasso,Termoli,Caretta caretta,1,ND,46.0,CCL,Morto,,,ND,Guardia Costiera,Nicola Marrone,ASREM,14.92221,42.0166
 CSC260808TCc3,2026-08-08,Emilia Romagna,Ravenna,Ravenna,Caretta caretta,1,ND,57.0,CCL,Morto,,,ND,Guardia Costiera,Non disponibile,Guardia Costiera,12.27974,44.51869
 CSC260808TCc4,2026-08-08,Abruzzo,Teramo,Giulianova,Caretta caretta,1,ND,47.0,CCL,Morto,,,ND,Guardia Costiera,Claudia Borgatti,Centro Studi Cetacei,13.96295,42.76486
 CSC260808TCc1,2026-08-08,Emilia Romagna,Ravenna,Ravenna,Caretta caretta,1,ND,54.0,CCL,Morto,,,ND,Guardia Costiera,Non disponibile,Guardia Costiera,12.28649,44.48201
