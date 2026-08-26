@@ -1,8 +1,8 @@
 codice,data_rilievo,regione,provincia,comune,specie,cod_specie,sesso,lunghezza_cm,tipo_lunghezza,condizioni,tag,tag_rilascio,interazione,segnalato_da,rilevatore,struttura_rilevatore,lng,lat
-CSC260824TCc1,2026-08-24,Abruzzo,Teramo,Martinsicuro,Caretta caretta,1,ND,60.0,CCL,Morto,,,ND,Guardia Costiera,Non disponibile,Guardia Costiera,13.92575,42.86536
+CSC260824TCc1,2026-08-24,Abruzzo,Teramo,Martinsicuro,Caretta caretta,1,ND,60.0,CCL,Morto,,,ND,Guardia Costiera,Non disponibile,Guardia Costiera,13.92619,42.8659
 CSC260823TCc1,2026-08-23,Abruzzo,Chieti,Vasto,Caretta caretta,1,ND,51.0,CCL,Morto,,,ND,Guardia Costiera,Quintino Rossi,ASL,14.72778,42.09605
-CSC260819TCc1,2026-08-19,Abruzzo,Teramo,Martinsicuro,Caretta caretta,1,ND,40.0,CCL,Morto,,,ND,Guardia Costiera,Claudia Borgatti,Centro Studi Cetacei,13.92398,42.87421
 CSC260819TCc2,2026-08-19,Abruzzo,Chieti,Vasto,Caretta caretta,1,ND,54.0,CCL,Morto,,,ND,Guardia Costiera,Fabrizio Musci De Sommain,ASL,14.72487,42.09862
+CSC260819TCc1,2026-08-19,Abruzzo,Teramo,Martinsicuro,Caretta caretta,1,ND,40.0,CCL,Morto,,,ND,Guardia Costiera,Claudia Borgatti,Centro Studi Cetacei,13.92398,42.87421
 CSC260818TCc1,2026-08-18,Abruzzo,Teramo,Martinsicuro,Caretta caretta,1,ND,90.0,TOT,Morto,,,ND,Guardia Costiera,Non disponibile,Guardia Costiera,13.93016,42.84441
 CSC260817TCc1,2026-08-17,Puglia,Foggia,Lesina,Caretta caretta,1,ND,52.0,CCL,Morto,,,ND,Guardia Costiera,Jacopo Soccio,ASL,15.5268,41.91219
 CSC260816TCc1,2026-08-16,Marche,Ancona,Senigallia,Caretta caretta,1,ND,,,Morto,,,ND,Guardia Costiera,Non disponibile,Guardia Costiera,13.23324,43.71085
